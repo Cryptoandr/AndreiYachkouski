@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Заполните Анкету</h1>
+    <form id="form" name="interview" method="GET" action="http://fe.it-academy.by/TestForm.php" target="_blank">
+
+        <fieldset> <!-- 1 -->
+            <legend>Личные данные</legend>
+            <input  id="in_1_1_1" 
+                    name="surname"
+                    type="text" 
+                    tabindex="1"
+                    autofocus 
+                    required
+                    placeholder="Фамилия"
+                    maxlength="25"
+                    pattern="^[А-Я]{1}[а-яЁё]+$"            
+                >
+            <p></p>
+            <input  id="in_1_1_2"
+                    name="firstname" 
+                    type="text" 
+                    required 
+                    tabindex="2"
+                    placeholder="Имя"
+                    maxlength="20"
+                    pattern="^[А-Я][а-яЁё]+$"            
+                >
+            <p></p>
+            <input  id="in_1_1_3"
+                    name="fathername"
+                    type="text"  
+                    tabindex="3" 
+                    placeholder="Отчество"
+                    maxlength="24"
+                    pattern="^[А-Я][а-яЁё]+(ич|на)$"            
+                >
+            <p></p>
+            <fieldset> <!-- 1_1 -->
+                <legend>Паспортные данные</legend>
+                <input  id="in_1_2_1" 
+                    name="pass_serie"
+                    type="text" 
+                    required
+                    tabindex="4" 
+                    size="2"
+                    placeholder="ХХ"
+                    maxlength="2"
+                    pattern="^[А-Я]+$"            
+                >
+                <label for="in_1_2_1">Серия</label>
+                <input  id="in_1_2_2" 
+                    name="pass_numer"
+                    type="text" 
+                    required 
+                    size="7"
+                    tabindex="5" 
+                    placeholder="XXXXXXX"
+                    maxlength="7"
+                    pattern="^[0-9]+$"            
+                >
+                <label for="in_1_2_2">Номер</label>
+            </fieldset>
+            <fieldset> <!-- 1_2 -->
+                <legend>День рождения</legend>
+                <input  id="bd_1" 
+                name="b_year"
+                type="text" 
+                tabindex="8" 
+                required
+                placeholder="Год"
+                maxlength="4"
+                pattern="^[0-9]+$"            
+            >
+            <p></p>
+            <select size="1" id="bd_2" name="b_manth" tabindex="9" placeholder="Месяц">
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+            </select>
+            <p></p>
+            <input  id="bd_3"
+                    name="b_day"
+                    type="number" 
+                    min="1"
+                    max="31"
+                    step="1"
+                    size="4"
+                    tabindex="10" 
+                    placeholder="день"            
+                >
+            <p></p>
+            </fieldset>
+            <select size="1" id="nat_2" name="nation" tabindex="11" required placeholder="BY">
+                <option value="1">BY</option>
+                <option value="2">DE</option>
+                <option value="3">PL</option>
+                <option value="4">UA</option>
+                <option value="5">SO</option>
+            </select>
+            <p>Адрес: <br>
+                <textarea  id="adr" 
+                        name="adres"
+                        type="text" 
+                        tabindex="12"  
+                        placeholder="Адрес"          
+                    >
+                </textarea>
+            </p>
+        </fieldset>
+        <fieldset> <!-- 2 -->
+            <legend>Интересы</legend>
+            <fieldset> <!-- 2_1 -->
+                <legend>Хобби</legend>
+                <p><input type="checkbox" name="hobby[]" value="fish"> Рыбалка </p>
+                <p><input type="checkbox" name="hobby[]" value="Astr"> Астрономия </p>
+                <p><input type="checkbox" name="hobby[]" value="Div"> Дайвинг </p>
+                <p><input type="checkbox" name="hobby[]" value="Stamps"> Марки </p> 
+            </fieldset>
+            <fieldset> <!-- 2_2 -->
+                <legend>Домашние животные</legend>
+                <select id="pet_2_2" size="8" name="pets[]" multiple>
+                    <optgroup label="Попугаи">
+                        <option selected value="Voln">Волнистый</option>
+                        <option value="Ara">Ара</option>
+                        <option value="Nerazluch">Неразлучник</option>
+                    </optgroup>
+                    <optgroup label="Рыбы">
+                        <option value="Kar">Караси</option>
+                        <option value="Karp">Карпы</option>
+                        <option value="Okun">Окуни</option>
+                    </optgroup>
+                    <optgroup label="Птицы">
+                        <option value="Kan">Канарейка</option>
+                        <option value="Sol">Соловей</option>
+                        <option value="Vor">Ворона</option>
+                    </optgroup>
+                </select>
+            </fieldset>   
+        </fieldset>
+        <fieldset> <!-- 3 -->
+            <legend>Данные для входа и восстановления пароля</legend>
+                <input type="text" 
+                    name="login3" 
+                    id="lod31" 
+                    size="20" 
+                    placeholder="Логин"
+                    pattern="[A-Za-z]{5,}" 
+                    required
+                > <br>
+                <input type="text" 
+                    name="password3" 
+                    id="pass32" 
+                    size="20"
+                    placeholder="Пароль" 
+                    autocomplete="off"
+                    pattern="[A-Za-z]{10,}" 
+                    required
+                >
+         </fieldset>
+        <fieldset> <!-- 4 -->
+            <legend>Координаты</legend>
+                <input type="email" 
+                        name="email4" 
+                        id="em_41" 
+                        placeholder="Введите e-mail"
+                    > <br>
+                    <input type="url" 
+                        name="url4" 
+                        id="url_42" 
+                        value="http://"
+                        placeholder="Введите адрес сайта" 
+                    >  
+        </fieldset>
+        <fieldset> <!-- 5 -->
+            <legend>Цифры</legend>
+                <input type="number" 
+                   name="num5" 
+                   id="nm_51" 
+                   placeholder="Диапазон -2.5 - +2.5"
+                   step="0.1"
+                > <br>
+                <input type="range" 
+                    name="range5" 
+                    id="rng_52" 
+                    min="1" 
+                    max="10"
+                    list="rangeList1"
+                >  
+                <datalist id="rangeList1">
+                    <option value="0" label="0">
+                    <option value="2" label="2">
+                    <option value="4" label="4">    
+                    <option value="6" label="6">
+                    <option value="8" label="8">
+                    <option value="10" label="10">
+                </datalist>
+        </fieldset>
+        <fieldset> <!-- 6 -->
+            <legend>Кнопки управления</legend>
+            <input type="submit" form="form">  
+            <input type="reset"> 
+            <br>
+            <button type='button'>
+                <b>nothing</b><br>
+                <img src='letter.gif' width="50%" height="50%">
+        </button>
+             
+        </fieldset>       
+    </form>
+</body>
+</html>
