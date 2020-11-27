@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Метод Repeat</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bgframe{
+            width: 100%;
+            background-image:   url(img/l-t.png), 
+                                url(img/r-t.png), 
+                                url(img/r-b.png), 
+                                url(img/l-b.png), 
+                                  url(img/t.png), 
+                                  url(img/r.png),    
+                                  url(img/b.png), 
+                                  url(img/l.png);
+            background-position: top left, top right, bottom right, bottom left, top, right, bottom, left;
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x, repeat-y, repeat-x, repeat-y;
+            padding: 4em;
+            text-indent: 4em;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="bgframe">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus illo architecto quisquam? Cum accusamus tempora expedita ipsa aliquam dolorem, dignissimos enim alias. Vero quis temporibus quas pariatur ea laudantium. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus illo architecto quisquam? Cum accusamus tempora expedita ipsa aliquam dolorem, dignissimos enim alias. Vero quis temporibus quas pariatur ea laudantium. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus illo architecto quisquam? Cum accusamus tempora expedita ipsa aliquam dolorem, dignissimos enim alias. Vero quis temporibus quas pariatur ea laudantium. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus illo architecto quisquam? Cum accusamus tempora expedita ipsa aliquam dolorem, dignissimos enim alias. Vero quis temporibus quas pariatur ea laudantium. </p>
+    </div>
+
+</body>
+</html>

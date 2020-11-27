@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } 
+
+        #main{
+            display: flex;
+            background-color: blueviolet;
+            padding: 10px;
+            font-size: 24px;
+        }
+        #main nav{
+            background-color: rgb(186, 202, 253);
+            padding: 2em;
+        }
+        #main article{
+            padding: 30px;
+            padding-top: 10px;
+            background-color: rgb(27, 44, 122);
+            color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+        }
+        #main article div{
+            background-color:rgb(186, 202, 253);
+            margin: 1em;
+            padding: 1em 1em 0 1em;
+            text-indent: 3rem;
+        }
+        footer {
+            background-color: #f50;
+            font-size: 1.5em;
+            padding: 1em;
+            text-indent: 4em;
+        }
+        .img_l{
+            display: block;
+            float: right;
+            border-radius: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
+<body>
+    <div id="main">
+        <nav>
+            <p><b>Блок навигации</b></p>
+            <ul style="padding: 20px;">
+                <li>О Нас</li>
+                <li>Наша продукция</li>
+                <li>Наша миссия</li>
+                <li>Новости</li>
+                <li>Статьи</li>
+                <li>Контакты</li>
+            </ul>
+        </nav>
+        <article>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem magni laboriosam cum, est cumque distinctio culpa at aliquam libero harum, assumenda fugiat quasi doloremque odit quae. Culpa, quos id.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem magni laboriosam cum, est cumque distinctio culpa at aliquam libero harum, assumenda fugiat quasi doloremque odit quae. Culpa, quos id.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem magni laboriosam cum, est cumque distinctio culpa at aliquam libero harum, assumenda fugiat quasi doloremque odit quae. Culpa, quos id.</p>           
+            </div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem magni laboriosam cum, est cumque distinctio culpa at aliquam libero harum, assumenda fugiat quasi doloremque odit quae. Culpa, quos id. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem magni laboriosam cum, est cumque distinctio culpa at aliquam libero harum, assumenda fugiat quasi doloremque odit quae. Culpa, quos id. 
+                <img class="img_l" src="../Base/letter.jpg" alt="" width=100px height=100px ></p> <!-- Не пойму, почему не обтекается рисунок? -->
+            </div>
+            <div>
+                <p>Lorem, gloria!.</p>
+            </div>
+        </article>        
+      </div>
+      <footer>
+          Lorem!
+      </footer>
+</body>
+</html>

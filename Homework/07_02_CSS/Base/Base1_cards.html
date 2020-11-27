@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карты</title>
+    <style>
+        body{
+            background-color: #568;
+        }
+        .clubs_3{
+            width: 139px; /* ширина отображения - по ширине 1-ой карты*/
+            height: 188px;  /* высота отображения */
+            background-image: url(cards.png); /* разместил  фоном картинку */
+            background-position: -144px -200px; /* спозиционировал картинку так, чтобы нужная карта попала в зону отображения */
+            border-radius: 20px;        /*скруглил углы карт*/
+            display: inline-block;      /* обозначил блочный элемент div (не обтекаемый), как элемент, который обтекается другими элементами, подобно встроенному */
+            position: relative;   /* позиционирование элемента (сечас div) относительно родителя (сейчас body)*/
+        }
+        .hearts_5{
+            width: 139px;
+            height: 188px;
+            background-image: url(cards.png);
+            background-position: -432px -598px;
+            border-radius: 20px;
+            display: inline-block;
+            left: -70px; /* позиционирование элемента (сечас div) относительно родителя (сейчас body) слева*/
+            top: 15px; /* позиционирование элемента (сечас div) относительно родителя (сейчас body) сверху*/
+        }
+        .diams_9{
+            width: 139px;
+            height: 188px;
+            background-image: url(cards.png);
+            background-position: -288px -1394px;
+            border-radius: 20px;
+            display: inline-block;
+            left: -140px;
+            top: 30px;
+        } 
+        body div { position: relative; }           
+        p{
+            font-size: 2em;
+        }
+    </style>
+
+</head>
+<body >       
+    <p> 3&clubs;  5&hearts; 9&diams; </p> <!-- отображение символов карт */ -->
+    <div>
+    <div class="clubs_3">
+       
+    </div>
+    <div class="hearts_5">
+       
+    </div>    
+    <div class="diams_9">
+       
+    </div>    
+    </div>
+</body>
+
+</html>

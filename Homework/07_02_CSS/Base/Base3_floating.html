@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Флоат блоки</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } 
+        .main{
+            background-color: blueviolet;
+            padding: 10px;
+            font-size: 28px;
+        }
+        nav{
+            background-color: darkgreen;
+            width:15em;
+            float: left;
+            color: rgb(165, 252, 4);
+            padding-bottom: 20px;
+            padding-top: 20px;
+            padding-left: 40px;
+        }     
+        nav li{
+            margin-top: 12px;
+            padding-left: 13px;
+            padding-bottom: 10px;
+        }   
+        .footer{
+            width: 100%;
+            height: fit-content;
+            clear: both;
+            background-color: rgb(28, 6, 151);
+            padding: 20px 40px 10px 50px;
+            color: #fff;
+            font: 1.1em sans-serif;
+            position: relative;
+            bottom: 0;
+        }
+        .footer p {
+            text-indent: 40px;
+        }
+        .article {
+            background-color: darksalmon;
+            margin-bottom: 1em;
+            margin-left: 15em;
+            padding-top: 20px;
+            padding-left: 12px;
+            overflow: hidden;
+        }
+        .article img{
+            float: right;
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+            margin: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body class="main">
+        <nav>
+            <p><b>Блок навигации</b></p>
+            <ul style="padding: 20px;">
+                <li>О Нас</li>
+                <li>Наша продукция</li>
+                <li>Наша миссия</li>
+                <li>Новости</li>
+                <li>Статьи</li>
+                <li>Контакты</li>
+            </ul>
+        </nav>
+            <div class="article">
+                Размер блока: <br>
+                Занимает всю доступную ширину <br>
+                Должен присутствовать цвет фона <br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2ет, при помощи свойства margin-bottom <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus quia ipsum iure possimus dolorum ea dignissimos dolorem quas incidunt maiores, dicta libero accusantium, vel ad esse voluptatem. Excepturi, quos est.
+            </div>
+            <div class="article">
+                Размер блока: <br>
+                Занимает всю доступную ширину <br>
+                Должен присутствовать цвет фона <br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2ет, при помощи свойства margin-bottom <br>
+                Картинка Еставленна при помощи тега, плавание организованно по правому краю внутри данной статьи для этой картинки. <br>
+                <img src="letter.jpg" alt="letter">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis molestiae animi laborum? Iure fugiat eaque unde, veniam odit animi saepe, vel dignissimos amet quae porro! Beatae fugiat pariatur blanditiis?  
+            </div>
+            <div class="article">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, iusto? Quas, odit eaque enim soluta ullam ut laudantium sed officia eligendi sequi maxime velit assumenda accusantium minima eos earum tempora.
+            </div>
+    <div class="footer">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, itaque omnis ex cupiditate pariatur quis voluptatem aliquid ab iure, mollitia in ipsum tempora voluptate quam velit voluptates repellat saepe aspernatur.</p>
+    </div>
+</body>
+</html>

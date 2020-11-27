@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 div frame</title>
+    <style>
+        *{ /* Сбрасываем отступы заложенные в браузере, иначе появятся дополнительные отступы */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #bg1{
+            width: auto;
+            background: url('img/l.png'); 
+            background-repeat: repeat-y;
+            background-position: left;
+        }
+         #bg2{
+            background: url('img/t.png');
+            background-repeat: repeat-x;
+            background-position-y:top;
+        }
+        #bg3{
+            background: url('img/r.png'); 
+            background-repeat: repeat-y;
+            background-position:right;            
+        }
+        #bg4{
+            background: url('img/b.png');
+            background-repeat: repeat-x;
+            background-position-y:bottom;
+        }
+        #bg5{
+            background: url('img/l-t.png') no-repeat top left;
+        }
+        #bg6{
+            background: url('img/r-t.png') no-repeat top right;
+        }
+        #bg7{
+            background: url('img/l-b.png') no-repeat bottom left;
+        }
+        #bg8{
+            background: url('img/r-b.png') no-repeat bottom right;
+        }
+        #bg9{
+            padding: 3em;
+            text-indent: 3em;
+        }
+    </style>
+</head>
+<body>
+    <div id="bg1">
+        <div id="bg2">
+            <div id="bg3">
+                <div id="bg4">
+                    <div id="bg5">
+                        <div id="bg6">
+                            <div id="bg7">
+                                <div id="bg8">
+                                    <div id="bg9">
+                                        <h2>Домашнее задание №4</h2>
+                                    Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png. 
+                                    Разрезать ramka.png и сверстать резиновый фон, какой приведён ниже.<br> 
+                                    Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину. <br>
+                                    Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </body>   
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Растягивание рамкі бэкграунда</title>
+    <style>
+        
+        .bg_frame{
+            border-image-source: url(img/ramka.png); /* загружаю картинку рамки */
+            border-image-slice: 28%; /* Указываю, сколько рамки в углах оставлю не задействованой для растяжения (рамку буду растягивать.  Эта велина коррелирует с шириной рамки, заданной в border-image-width: Это какие-то относительные единицы, поэтому можно задавать значение в % */
+            border-image-repeat: stretch; /* Указываю, что буду растягивать оставшуся "не отрезаную" область между углами*/
+            border-image-width: 4em; /* Ширина рамки, что за единицы измерения - не сообразил */
+            width: 90%; /* Задал ширину рамки от ширины окна, высоту не указываю - будут по контенту */
+            border-style: dotted; /* Рамка идет сплошная, хотя и dotted и dasdhed  ит.п - ничего не меняли*/
+            border-width: 2em;
+            font: 2em sans-serif;
+            padding-left: 1em;
+        }
+</style>
+
+</head>
+<body>
+    <div class="bg_frame">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio libero asperiores numquam illo iste totam aperiam quaerat labore, fugiat autem, eius dolorum, earum a excepturi eligendi consectetur. Dignissimos, dolorem ad?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio libero asperiores numquam illo iste totam aperiam quaerat labore, fugiat autem, eius dolorum, earum a excepturi eligendi consectetur. Dignissimos, dolorem ad?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio libero asperiores numquam illo iste totam aperiam quaerat labore, fugiat autem, eius dolorum, earum a excepturi eligendi consectetur. Dignissimos, dolorem ad?</p>
+        </div>
+    
+</body>
+</html>
