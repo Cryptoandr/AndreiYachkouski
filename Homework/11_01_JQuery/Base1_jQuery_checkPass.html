@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework using jQuery</title>
+    	<!--Подключаем библиотеку jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #check_pass{
+            display: inline-block;
+        }
+        fieldset>input {
+            margin: 5px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="check_pass" name="pass" method="GET" action="http://fe.it-academy.by/TestForm.php" target="_blank">
+        <fieldset>
+            <input type="password" name="pass" id="pass" /> <br>
+            <input type="password" name="pass_check" id="pass_check" /> 
+            <p id="validate-status"></p>
+            <br>
+            <input type="submit" value="submit" id="submit" disabled>
+          </fieldset>
+    </form>
+
+    <script>
+        $(document).ready(function() { /* Когда завершится готовность документа, запускается функция cheker, связанная с событием "отжатие кнопки" */
+            $("#pass_check").keyup(checker);
+        });
+        /* Определение функции*/
+        function checker() {
+        var pass1 = $("#pass").val();
+        var pass2 = $("#pass_check").val();
+            if(pass1 == pass2) {
+                $("#validate-status").text("Пароли совпадают");
+                $("#pass_check").css({'border':'inherit'});
+               /* $("#submit").prop('disabled', false); */ /* Можно и так, .prop() устанавливает св-во */
+                $("#submit").removeAttr('disabled'); /* а тут св-во disabled удаляется*/
+            }
+            else {
+                $("#validate-status").text("Пороли не совпадают"); 
+                $("#pass_check").css({'border':'4px solid red'});
+            }
+        }
+    </script>
+    
+</body>
+</html>
